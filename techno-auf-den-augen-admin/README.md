@@ -12,6 +12,17 @@ Dieses Projekt bietet ein einfaches Dashboard, um die Facebook-Seite **"Techno a
 1. `composer install` ausführen, um Abhängigkeiten zu laden.
 2. In der Datei `.env` die Facebook‑App‑ID und den Zugriffstoken hinterlegen.
 3. Den Webserver so konfigurieren, dass die Dateien aus `frontend/` erreichbar sind.
+   Das Verzeichnis `backend/` sollte PHP ausführen können.
+
+## Nutzung
+Nach der Einrichtung kann das Dashboard direkt im Browser aufgerufen werden.
+Wichtige Aktionen:
+- Beiträge erstellen oder zeitgesteuert planen
+- Letzte Posts abrufen und anzeigen
+- Kommentare lesen und beantworten
+- Reaktionen und Insights einsehen
+
+Alle Funktionen greifen über `backend/api.php` auf die Facebook Graph API zu.
 
 ## Hinweis
-Dieses Projekt befindet sich in einem frühen Stadium und dient als Ausgangspunkt für weitere Entwicklungen.
+Dieses Projekt stellt ein minimal lauffähiges Admin-Panel dar und kann beliebig erweitert werden.

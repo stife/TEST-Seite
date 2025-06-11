@@ -7,7 +7,30 @@
 </head>
 <body>
     <h1>Techno auf den Augen – Dashboard</h1>
-    <div id="posts"></div>
+    <section>
+        <h2>Neuen Post erstellen</h2>
+        <form id="postForm">
+            <input type="text" id="pageId" placeholder="Page ID" required />
+            <textarea id="message" placeholder="Nachricht" required></textarea>
+            <button type="submit">Posten</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Geplanten Post erstellen</h2>
+        <form id="scheduleForm">
+            <input type="text" id="sPageId" placeholder="Page ID" required />
+            <textarea id="sMessage" placeholder="Nachricht" required></textarea>
+            <input type="datetime-local" id="publishTime" required />
+            <button type="submit">Planen</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Letzte Posts</h2>
+        <button id="refreshPosts">Aktualisieren</button>
+        <ul id="posts"></ul>
+    </section>
     <script src="scripts.js"></script>
 </body>
 </html>
