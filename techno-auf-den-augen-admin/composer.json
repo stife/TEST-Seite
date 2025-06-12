@@ -1,0 +1,7 @@
+{
+    "name": "die-paten/techno-auf-den-augen-admin",
+    "description": "Admin panel for Facebook page management via Graph API",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
